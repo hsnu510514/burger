@@ -7,6 +7,8 @@ import classes from './Burger.module.css'
 const burger = (props) => {
 
   // 將state轉換成array讓BurgerIngredient可以按照每一層輸出
+  // array(2) >> [ , ]
+  // map((_, i) => {}) _為輸入項，i為array之index
   let transformedIngredients = Object.keys(props.ingredients)
     .map(igKey => {
       return [...Array(props.ingredients[igKey])].map((_, i) => {

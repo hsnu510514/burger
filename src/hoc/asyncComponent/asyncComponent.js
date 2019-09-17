@@ -23,3 +23,7 @@ const asyncComponent = (importComponent) => {
 }
 
 export default asyncComponent;
+
+
+// lazy loading
+// 點擊要進入的下一個頁面時才import component 進來，並且執行後存入state中，最後再使用render顯示
